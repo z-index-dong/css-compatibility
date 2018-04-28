@@ -1,10 +1,14 @@
 /*
-* Written by:     Jack-rainbow
-* function:       兼容
-* Created Date:   2018-04-27
 * Modified Date:   2018-04-28
 * category      -webkit-/-moz-/-ms-/-o-
 */
+
+//   display: -moz-box;  /* Firefox */ 
+//   display: -ms-flexbox;    /* IE10 */ 
+//   display: -webkit-box;    /* Safari */  
+//   display: -webkit-flex;    /* Chrome, WebKit */ 
+//   display: flex;        /*opera,chrome*/ 
+
 
 //flex兼容
 .displayFlex{
@@ -15,7 +19,20 @@
 }
 .webkitFlex(@num){
     -webkit-flex:@num;
+    -webkit-box-flex:@num;
     flex:@num;
+}
+.justifyContentFlexEnd{
+	-webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.justifyContentFlexstart{
+    -webkit-justify-content: flex-start;
+    -webkit-box-pack:start;
+    -ms-flex-pack:start;
+    justify-content: flex-start;
 }
 .justifyContentSpaceBet{
     -webkit-justify-content: space-between;
@@ -41,26 +58,15 @@
     -ms-flex-direction:column;
     flex-direction: column;
 }
-.justifyContentFlexEnd{
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-}
-.justifyContentFlexstart{
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+.flexDirectionRow{
+    -webkit-box-orient:horizontal;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction: row;
 }
 .flexWrap(@wrap){
     -webkit-flex-wrap: @wrap;
     flex-wrap: @wrap;
-}
-
-/* linderGradient */
-.backgroundLinerGradient(@direction,@startColoe,@endColor){
-    background:-webkit-linear-gradient( @direction,@startColoe,@endColor);
-    background:-moz-liner-gradient( @direction,@startColoe,@endColor);
-    background:-ms-linear-gradient( @direction,@startColoe,@endColor);
-    background:-o-linear-gradient( @direction,@startColoe,@endColor);
-    background: linear-gradient( @direction,@startColoe,@endColor);
 }
 
 //background-size
