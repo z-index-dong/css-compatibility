@@ -1,0 +1,150 @@
+
+/* 
+* Safari/Chrome      -webkit-
+* Firefox               -moz-
+* IE 9                  -ms-    
+* Opera                 -o-
+*/
+
+//flex兼容
+.displayFlex{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex;
+}
+.webkitFlex(@num){
+    -webkit-flex:@num;
+    flex:@num;
+}
+.justifyContentSpaceBet{
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.justifyContentCenter{
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content: center;
+}
+.alignItems(@fx){
+    -webkit-align-items: @fx;
+    -webkit-box-align: @fx;
+    -ms-flex-align: @fx;
+    align-items: @fx;
+}
+.flexDirectionColumn{
+    -webkit-box-orient:vertical;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction: column;
+}
+.justifyContentFlexEnd{
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+.justifyContentFlexstart{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.flexWrap(@wrap){
+    -webkit-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+}
+
+/* linderGradient */
+.backgroundLinerGradient(@direction,@startColoe,@endColor){
+    background:-webkit-linear-gradient( @direction,@startColoe,@endColor);
+    background:-moz-liner-gradient( @direction,@startColoe,@endColor);
+    background:-ms-linear-gradient( @direction,@startColoe,@endColor);
+    background:-o-linear-gradient( @direction,@startColoe,@endColor);
+    background: linear-gradient( @direction,@startColoe,@endColor);
+}
+
+//linear-gradient
+.linearGradient(@direction,@startColoe,@endColor){
+	-webkit-linear-gradient( @direction,@startColoe,@endColor);
+    -moz-liner-gradient( @direction,@startColoe,@endColor);
+    -ms-linear-gradient( @direction,@startColoe,@endColor);
+    -o-linear-gradient( @direction,@startColoe,@endColor);
+    linear-gradient( @direction,@startColoe,@endColor);
+}
+
+// box-shadow
+.boxShadow(@x,@y,@size,@color){
+    -webkit-box-shadow: @x @y @size @color;
+    -moz-box-shadow: @x @y @size @color;
+    -ms-box-shadow: @x @y @size @color;
+    -o-box-shadow: @x @y @size @color;
+    box-shadow: @x @y @size @color;
+}
+
+//transform
+.transform(@args){
+    -webkit-transform: @args;
+    -moz-transform: @args;
+    -ms-transform: @args;
+    -o-transform: @args;
+    transform: @args;
+}
+
+//transform-origin
+.transformOrigin(@start,@end){
+    -webkit-transform-origin:@start @end;
+    -moz-transform-origin:@start @end;
+    -ms-transform-origin:@start @end;
+    -o-transform-origin:@start @end;
+    transform-origin:@start @end
+}
+
+//perspective-origin
+.perspectiveOrigin(@x,@y){
+    -webkit-perspective-origin: @x @y;
+    -moz-perspective-origin: @x @y;
+    -ms-perspective-origin: @x @y;
+    -o-perspective-origin: @x @y;
+    perspective-origin: @x @y;
+}
+
+//transition
+.transition(@fx,@time){
+    -webkit-transition: @fx @time;
+    -moz-transition: @fx @time; 
+    -o-transition: @fx @time;
+    transition: @fx @time; 
+}
+
+//animation
+.animation(@name,@time,@fx){
+    -webkit-animation:@name @time @fx; 
+    animation:@name @time @fx;
+}
+
+//keyframs
+.keyFrams(@name,@fx,@fro@To){
+    @-webkit-keyframes @name 
+    {
+        from {@fx:@fromTo;}
+        to {@fx:@To;}
+    }
+
+    @-moz-keyframes @name 
+    {
+        from {@fx:@fromTo;}
+        to {@fx:@To;}
+    }
+
+    @-o-keyframes @name 
+    {
+        from {@fx:@fromTo;}
+        to {@fx:@To;}
+    }
+
+    @keyframes @name
+    {
+        from {@fx:@fromTo;}
+        to {@fx:@To;}
+    }
+}
