@@ -1,9 +1,10 @@
-
-/* 
-* Safari/Chrome      -webkit-
-* Firefox               -moz-
-* IE 9                  -ms-    
-* Opera                 -o-
+/*
+* Written by:     Jack-rainbow
+* function:       兼容
+* Created Date:   2018-04-27
+* Modified Date:   2018-04-28
+* category      -webkit-/-moz-/-ms-/-o-
+* channel      渠道ID
 */
 
 //flex兼容
@@ -61,6 +62,12 @@
     background:-ms-linear-gradient( @direction,@startColoe,@endColor);
     background:-o-linear-gradient( @direction,@startColoe,@endColor);
     background: linear-gradient( @direction,@startColoe,@endColor);
+}
+
+//background-size
+.backgroundSize(@f,@x){
+	-moz-background-size:@f @x;
+	background-size:@f @x;
 }
 
 //linear-gradient
@@ -147,4 +154,63 @@
         from {@fx:@fromTo;}
         to {@fx:@To;}
     }
+}
+
+//border-box
+.boxSizing(@cont){
+	-webkit-box-sizing: @cont;
+	-moz-box-sizing: @cont;
+	-ms-box-sizing: @cont;
+	-o-box-sizing: @cont;
+	box-sizing: @cont;
+}
+
+//border-radius
+.borderRadius(@px){
+	-webkit-border-radius: @px;
+	-moz-border-radius: @px;
+	border-radius: @px;
+}
+
+//background-clip
+.backgroundClip(@args){
+	-moz-background-clip: @args;
+	-webkit-background-clip: @args;
+	background-clip: @args;
+}
+
+//user-select
+.userSelect(@args){
+	-webkit-user-select: @args;
+	-moz-user-select: @args;
+	user-select: @args;
+}
+
+//pointer-events
+.pointerEvents(@args){
+	-webkit-pointer-events: @args;
+	pointer-events: @args;
+}
+
+//text-overflow
+.textOverflow(@cont){
+	-moz-text-overflow:@cont;
+	-o-text-overflow:@cont;
+	text-overflow:@cont;
+}
+
+//text-align-last
+.textAlignLast(@args){
+	-webkit-text-align-last:@args;
+	-moz-text-align-last:@args;
+	text-align-last:@args;
+}
+
+//min-device-pixel-ratio(像素比)
+.minDevicePixelRatio(@num){
+	-webkit-min-device-pixel-ratio:@num;
+	min--moz-device-pixel-ratio:@num;
+	-o-min-device-pixel-ratio:@num;
+	min-device-pixel-ratio:@num;
+
 }
