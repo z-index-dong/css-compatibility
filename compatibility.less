@@ -10,60 +10,69 @@
 //   display: flex;        /*opera,chrome*/ 
 
 
-//flex兼容
+//flex
 .displayFlex{
     display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display:flex;
 }
+//占位
 .webkitFlex(@num){
     -webkit-flex:@num;
     -webkit-box-flex:@num;
     flex:@num;
 }
+//justify-content：flex-end
 .justifyContentFlexEnd{
 	-webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
+//justify-content：flex-start
 .justifyContentFlexstart{
     -webkit-justify-content: flex-start;
     -webkit-box-pack:start;
     -ms-flex-pack:start;
     justify-content: flex-start;
 }
+//justify-content：space-between
 .justifyContentSpaceBet{
     -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+//justify-content:center
 .justifyContentCenter{
     -webkit-box-pack:center;
     -webkit-justify-content:center;
     -ms-flex-pack:center;
     justify-content: center;
 }
+//文字排列方式
 .alignItems(@fx){
     -webkit-align-items: @fx;
     -webkit-box-align: @fx;
     -ms-flex-align: @fx;
     align-items: @fx;
 }
+//flex-direction:column
 .flexDirectionColumn{
     -webkit-box-orient:vertical;
     -webkit-flex-direction:column;
     -ms-flex-direction:column;
     flex-direction: column;
 }
+//flex-direction:row
 .flexDirectionRow{
     -webkit-box-orient:horizontal;
     -webkit-flex-direction:row;
     -ms-flex-direction:row;
     flex-direction: row;
 }
+//文本换行方式
 .flexWrap(@wrap){
     -webkit-flex-wrap: @wrap;
     flex-wrap: @wrap;
