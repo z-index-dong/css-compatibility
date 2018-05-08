@@ -15,156 +15,152 @@
     display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display:flex;
+    display: flex;
 }
 //占位
 .webkitFlex(@num){
-    -webkit-flex:@num;
-    -webkit-box-flex:@num;
-    flex:@num;
+    -webkit-flex: @num;
+    -webkit-box-flex: @num;
+				flex: @num;
 }
 //justify-content：flex-end
 .justifyContentFlexEnd{
 	-webkit-box-pack: end;
     -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+       -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 //justify-content：flex-start
 .justifyContentFlexstart{
     -webkit-justify-content: flex-start;
     -webkit-box-pack:start;
-    -ms-flex-pack:start;
-    justify-content: flex-start;
+       -ms-flex-pack:start;
+            justify-content: flex-start;
 }
 //justify-content：space-between
 .justifyContentSpaceBet{
     -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+       -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 //justify-content:center
 .justifyContentCenter{
     -webkit-box-pack:center;
     -webkit-justify-content:center;
-    -ms-flex-pack:center;
-    justify-content: center;
+       -ms-flex-pack:center;
+            justify-content: center;
 }
 //文字排列方式
 .alignItems(@fx){
     -webkit-align-items: @fx;
-    -webkit-box-align: @fx;
-    -ms-flex-align: @fx;
-    align-items: @fx;
+      -webkit-box-align: @fx;
+         -ms-flex-align: @fx;
+            align-items: @fx;
 }
 //flex-direction:column
 .flexDirectionColumn{
     -webkit-box-orient:vertical;
     -webkit-flex-direction:column;
-    -ms-flex-direction:column;
-    flex-direction: column;
+        -ms-flex-direction:column;
+            flex-direction: column;
 }
 //flex-direction:row
 .flexDirectionRow{
     -webkit-box-orient:horizontal;
     -webkit-flex-direction:row;
-    -ms-flex-direction:row;
-    flex-direction: row;
+        -ms-flex-direction:row;
+            flex-direction:row;
 }
 //文本换行方式
 .flexWrap(@wrap){
     -webkit-flex-wrap: @wrap;
-    flex-wrap: @wrap;
+            flex-wrap: @wrap;
 }
 
 //background-size
 .backgroundSize(@f,@x){
 	-moz-background-size:@f @x;
-	background-size:@f @x;
+	     background-size:@f @x;
 }
 
 //linear-gradient
 .linearGradient(@direction,@startColoe,@endColor){
 	-webkit-linear-gradient( @direction,@startColoe,@endColor);
-    -moz-liner-gradient( @direction,@startColoe,@endColor);
-    -ms-linear-gradient( @direction,@startColoe,@endColor);
-    -o-linear-gradient( @direction,@startColoe,@endColor);
-    linear-gradient( @direction,@startColoe,@endColor);
+        -moz-liner-gradient( @direction,@startColoe,@endColor);
+        -ms-linear-gradient( @direction,@startColoe,@endColor);
+         -o-linear-gradient( @direction,@startColoe,@endColor);
+            linear-gradient( @direction,@startColoe,@endColor);
 }
 
 // box-shadow
 .boxShadow(@x,@y,@size,@color){
     -webkit-box-shadow: @x @y @size @color;
-    -moz-box-shadow: @x @y @size @color;
-    -ms-box-shadow: @x @y @size @color;
-    -o-box-shadow: @x @y @size @color;
-    box-shadow: @x @y @size @color;
+       -moz-box-shadow: @x @y @size @color;
+        -ms-box-shadow: @x @y @size @color;
+         -o-box-shadow: @x @y @size @color;
+            box-shadow: @x @y @size @color;
 }
 
 //transform
 .transform(@args){
     -webkit-transform: @args;
-    -moz-transform: @args;
-    -ms-transform: @args;
-    -o-transform: @args;
-    transform: @args;
+       -moz-transform: @args;
+        -ms-transform: @args;
+         -o-transform: @args;
+            transform: @args;
 }
 
 //transform-origin
 .transformOrigin(@start,@end){
     -webkit-transform-origin:@start @end;
-    -moz-transform-origin:@start @end;
-    -ms-transform-origin:@start @end;
-    -o-transform-origin:@start @end;
-    transform-origin:@start @end
+       -moz-transform-origin:@start @end;
+        -ms-transform-origin:@start @end;
+         -o-transform-origin:@start @end;
+            transform-origin:@start @end
 }
 
 //perspective-origin
 .perspectiveOrigin(@x,@y){
     -webkit-perspective-origin: @x @y;
-    -moz-perspective-origin: @x @y;
-    -ms-perspective-origin: @x @y;
-    -o-perspective-origin: @x @y;
-    perspective-origin: @x @y;
+       -moz-perspective-origin: @x @y;
+        -ms-perspective-origin: @x @y;
+         -o-perspective-origin: @x @y;
+			perspective-origin: @x @y;
 }
 
 //transition
 .transition(@fx,@time){
     -webkit-transition: @fx @time;
-    -moz-transition: @fx @time; 
-    -o-transition: @fx @time;
-    transition: @fx @time; 
+       -moz-transition: @fx @time; 
+         -o-transition: @fx @time;
+            transition: @fx @time; 
 }
 
 //animation
 .animation(@name,@time,@fx){
     -webkit-animation:@name @time @fx; 
-    animation:@name @time @fx;
+            animation:@name @time @fx;
 }
 
 //keyframs
 .keyFrams(@name,@fx,@fro@To){
-    @-webkit-keyframes @name 
-    {
+    @-webkit-keyframes @name {
         from {@fx:@fromTo;}
         to {@fx:@To;}
     }
 
-    @-moz-keyframes @name 
-    {
+    @-moz-keyframes @name {
         from {@fx:@fromTo;}
         to {@fx:@To;}
     }
 
-    @-o-keyframes @name 
-    {
+    @-o-keyframes @name {
         from {@fx:@fromTo;}
         to {@fx:@To;}
     }
 
-    @keyframes @name
-    {
+    @keyframes @name {
         from {@fx:@fromTo;}
         to {@fx:@To;}
     }
@@ -173,58 +169,58 @@
 //border-box
 .boxSizing(@cont){
 	-webkit-box-sizing: @cont;
-	-moz-box-sizing: @cont;
-	-ms-box-sizing: @cont;
-	-o-box-sizing: @cont;
-	box-sizing: @cont;
+	   -moz-box-sizing: @cont;
+	    -ms-box-sizing: @cont;
+	     -o-box-sizing: @cont;
+	        box-sizing: @cont;
 }
 
 //border-radius
 .borderRadius(@px){
 	-webkit-border-radius: @px;
-	-moz-border-radius: @px;
-	border-radius: @px;
+	   -moz-border-radius: @px;
+	        border-radius: @px;
 }
 
 //background-clip
 .backgroundClip(@args){
-	-moz-background-clip: @args;
-	-webkit-background-clip: @args;
-	background-clip: @args;
+    -webkit-background-clip: @args;
+       -moz-background-clip: @args;
+	        background-clip: @args;
 }
 
 //user-select
 .userSelect(@args){
 	-webkit-user-select: @args;
-	-moz-user-select: @args;
-	user-select: @args;
+	   -moz-user-select: @args;
+	        user-select: @args;
 }
 
 //pointer-events
 .pointerEvents(@args){
 	-webkit-pointer-events: @args;
-	pointer-events: @args;
+	        pointer-events: @args;
 }
 
 //text-overflow
 .textOverflow(@cont){
-	-moz-text-overflow:@cont;
-	-o-text-overflow:@cont;
-	text-overflow:@cont;
+	-moz-text-overflow: @cont;
+	  -o-text-overflow: @cont;
+	     text-overflow: @cont;
 }
 
 //text-align-last
 .textAlignLast(@args){
-	-webkit-text-align-last:@args;
-	-moz-text-align-last:@args;
-	text-align-last:@args;
+	-webkit-text-align-last: @args;
+	   -moz-text-align-last: @args;
+	        text-align-last: @args;
 }
 
 //min-device-pixel-ratio(像素比)
 .minDevicePixelRatio(@num){
-	-webkit-min-device-pixel-ratio:@num;
-	min--moz-device-pixel-ratio:@num;
-	-o-min-device-pixel-ratio:@num;
-	min-device-pixel-ratio:@num;
+	-webkit-min-device-pixel-ratio: @num;
+	   min--moz-device-pixel-ratio: @num;
+	     -o-min-device-pixel-ratio: @num;
+	        min-device-pixel-ratio: @num;
 
 }
