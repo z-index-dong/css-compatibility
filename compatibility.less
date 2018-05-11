@@ -1,7 +1,6 @@
 /*
 * Modified Date:   2018-04-28
 * category      -webkit-/-moz-/-ms-/-o-
-* author  Jack-rainbow
 */
 
 //   display: -moz-box;  /* Firefox */ 
@@ -224,4 +223,18 @@
 	     -o-min-device-pixel-ratio: @num;
 	        min-device-pixel-ratio: @num;
 
+}
+
+//border-image
+.borderImage(@url,@slice,@width,@outset){
+    -webkit-border-image: url(@url) @slice @width @outset; /* Safari 5 */
+         -o-border-image: url(@url) @slice @width @outset; /* Opera */
+            border-image: url(@url) @slice @width @outset;
+}
+
+//box-direction
+.boxDirection(@fx){
+    -webkit-box-direction: @fx;
+       -moz-box-direction: @fx;
+            box-direction: @fx;
 }
