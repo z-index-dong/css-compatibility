@@ -87,9 +87,9 @@
 // flex-direction:column
 // --------------------------------------------------
 .flexDirectionColumn {
-    -webkit-box-orient:vertical;
-    -webkit-flex-direction:column;
-        -ms-flex-direction:column;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
             flex-direction: column;
 }
 
@@ -97,10 +97,10 @@
 // flex-direction:row
 // --------------------------------------------------
 .flexDirectionRow {
-    -webkit-box-orient:horizontal;
-    -webkit-flex-direction:row;
-        -ms-flex-direction:row;
-            flex-direction:row;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 //
@@ -160,7 +160,7 @@
        -moz-transform-origin: @arguments;
         -ms-transform-origin: @arguments;
          -o-transform-origin: @arguments;
-            transform-origin: @argum@arguments
+            transform-origin: @arguments;
 }
 
 //
@@ -308,4 +308,15 @@
     -webkit-box-direction: @fx;
        -moz-box-direction: @fx;
             box-direction: @fx;
+}
+
+/*-------------------------------------
+├   ellipsis                          ┆
+└------------------------------------*/
+.ellipsis() {
+    white-space: nowrap; 
+    overflow:hidden;
+    -ms-text-overflow: ellipsis; 
+     -o-text-overflow: ellipsis;   
+        text-overflow: ellipsis; 
 }
